@@ -1,0 +1,109 @@
+Question 1,a
+
+
+
+	awk -F'\t' '{if( $2 < 1000)print $0}' expression.tab
+
+
+Question 1,b 
+
+
+
+	awk -F'\t' '$2~/ase/{print}' annotation.tab
+
+
+
+
+
+
+
+Question 1,c
+
+
+	awk -F'\t' '(($3~/biosynthesis/)&&(($3~/Purine/)||($3~/Pyrimidine/))){print}' annotation.tab
+
+
+
+
+
+
+
+
+
+Question 2,a 
+
+
+	curl https://downloads.mysql.com/docs/world_x-db.zip >world_x-db.zip
+
+
+
+  Only if you don't have unzip command in Ubuntu, each machine could be difference.
+
+	sudo apt install unzip
+	unzip world_x-db.zip
+
+  To check my answer, please directly use sql file
+
+
+
+
+  Go to the directory 'world_x-db'
+
+	cd world_x-db
+
+
+
+
+  My root password doesn't work!so,
+
+	sudo mysql
+
+  I linked the new database to same username we were always using with same password
+
+	mysql> GRANT ALL ON world_x.* TO awkologist@localhost IDENTIFIED BY "awkology";
+
+
+
+	mysql> create database world_x;
+
+
+
+	mysql> exit
+
+
+
+	mysql -u awkologist -p world_x < world_x.sql
+
+
+
+
+  Finally, to check table, 
+	 mysql -u awkologist -p world_x -e 'show tables;'
+
+
+
+
+
+
+Question 2,b
+
+
+
+
+	mysql -u awkologist -p world_x -e 'select c.Name, cl.Percentage, c.Capital from (country c inner join countrylanguage cl on c.code = cl.CountryCode and cl.Language = "English") where  cl.Percentage > 50';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
