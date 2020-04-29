@@ -12,8 +12,6 @@ How do I import an SQL file using the command line in MySQL? (n.d.). Stack Overf
 
 linux—Using AWK to select rows with specific value in specific column. (n.d.). Unix & Linux Stack Exchange. Retrieved April 28, 2020, from https://unix.stackexchange.com/questions/399560/using-awk-to-select-rows-with-specific-value-in-specific-column
 
-population of australia—Google Search. (n.d.). Retrieved April 29, 2020, from https://www.google.com/search?q=population+of+australia&rlz=1C5CHFA_enUS789US789&oq=population+of+australia&aqs=chrome..69i57j0l7.6229j1j7&sourceid=chrome&ie=UTF-8
-
 GGPlot Title, Subtitle and Caption: The Ultimate Guide. (2018, November 11). Datanovia. https://www.datanovia.com/en/blog/ggplot-title-subtitle-and-caption/
 
 Holtz, Y. (n.d.). Basic barplot with ggplot2. Retrieved April 28, 2020, from https://www.r-graph-gallery.com/218-basic-barplots-with-ggplot2.html
