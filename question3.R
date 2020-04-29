@@ -10,10 +10,10 @@ library(ggplot2)
 # (Holtz, n.d.)(RPubs - Reordering a Ggplot Bar Chart Axis, n.d.)
 data <- data.frame(country <- c("Belgium", "Spain", "Italy","France", "Netherlands",
                                 "Sweden",  "Ireland", "Switzerland", "Portugal", "Denmark", 
-                                "Germany","Austria"), 
+                                "Germany","Austria", "Australia"), 
                    fatalityRate <- c(59,48,44,34,25,
                                      22,21,18,8,7,
-                                     6,5))
+                                     6,5,0.32))
 # plot the data 
 # (Holtz, n.d.)(“GGPlot Title, Subtitle and Caption,” 2018)
 # (“How to Structure Your Code in R,” n.d.)(Modify Axis, Legend, and Plot Labels — Labs, n.d.)
@@ -26,9 +26,6 @@ gg3 <- gg2 +coord_flip() + ggtitle(label  = "German efficiency",
                                    \nEurope, selected countries, to April 25th 2020")
 gg4 <- gg3 +labs(x = "country", y = "fatality rate")
 gg4
-# reference 
-# Holtz, Y. (n.d.). Basic barplot with ggplot2. Retrieved April 28, 2020, from https://www.r-graph-gallery.com/218-basic-barplots-with-ggplot2.html
-# RPubs—Reordering a ggplot bar chart axis. (n.d.). Retrieved April 28, 2020, from https://www.rpubs.com/dvdunne/reorder_ggplot_barchart_axis
 
 #Reference
 #GGPlot Title, Subtitle and Caption: The Ultimate Guide. (2018, November 11). Datanovia. https://www.datanovia.com/en/blog/ggplot-title-subtitle-and-caption/
