@@ -90,7 +90,7 @@ Question 2,b
 
 
 
-	mysql -u awkologist -p world_x -e 'select c.Name, cl.Percentage, c.Capital from (country c inner join countrylanguage cl on c.code = cl.CountryCode and cl.Language = "English") where  cl.Percentage > 50';
+	mysql -u awkologist -p world_x -e 'select c.Name, cl.Percentage, ct.Name from (country c inner join countrylanguage cl on c.code = cl.CountryCode and cl.Language = "English") inner join city ct on c.Capital = ct.ID  where  cl.Percentage > 50';
 
 
 
